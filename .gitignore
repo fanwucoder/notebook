@@ -1,0 +1,12 @@
+/.ipynb_checkpoints
+/metastore_db
+/*.log
+/genlog/stream
+/genlog/test.log
+.ipynb_checkpoints
+metastore_db
+derby.log
+
+/如何成为一个管理者/metastore_db
+/如何成为一个管理者/derby.log
+/如何成为一个管理者/.ipynb_checkpoints
