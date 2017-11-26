@@ -1,0 +1,13 @@
+1.不识别'-mimpure-text'参数
+错误信息：
+ 
+gcc: error: unrecognized command line option '-mimpure-text'
+ 
+make[5]: *** [/openjdk/build/linux-amd64/../linux-amd64-debug/lib/amd64/libverify.so] Error 1
+ 
+解决办法：
+gcc版本问题，这个命令在本机所用的4.7.2版的gcc中已经去除，既然不能降低gcc版本（本机ubuntu12.10内核用4.7.2版gcc编译），那
+就在 【解压缩目录】/make/common/shared/Compiler-gcc.gmk 中去掉 -mimpure-text 命令
+
+2.time is more than 10 years from present: 1136059200000
+通过修改【解压缩目录】/src/share/classes/java/util/CurrencyData.properties文件, 今年是2016年，把小于2006年的都改成2006年之前
